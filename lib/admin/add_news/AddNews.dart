@@ -214,8 +214,7 @@ class _AddNewsState extends State<AddNews> {
                           dialogType: DialogType.success,
                           animType: AnimType.rightSlide,
                           title: 'Actualités Envoyer',
-                          // desc: 'Dialog description here.............',
-                          //    btnCancelOnPress: () {},
+
                           btnOkOnPress: () {},
                         )..show();
                       },
