@@ -7,12 +7,13 @@ class SignIn extends StatefulWidget {
   @override
   State<SignIn> createState() => _SignInState();
 }
-bool visible = false;
+bool visible = true;
 class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
+    TextEditingController ps = TextEditingController();
 
 
     return Scaffold(
@@ -116,12 +117,15 @@ class _SignInState extends State<SignIn> {
                         height: 20,
                       ),
                       TextFormField(
+
+
                         obscureText: visible,
                         decoration: InputDecoration(
                             suffixIcon: GestureDetector(
                               onTap: () {
                                 setState(() {
                                   visible = !visible;
+
                                 });
                               },
                               child: Icon(visible? Icons.visibility:Icons.visibility_off),
@@ -147,6 +151,9 @@ class _SignInState extends State<SignIn> {
                         keyboardType: TextInputType.emailAddress,
                         textInputAction: TextInputAction.done,
                         cursorColor: Colors.black,
+                      //  controller: ps,
+
+
                       ),
                       const SizedBox(height: 20,),
                       ElevatedButton(
@@ -163,7 +170,9 @@ class _SignInState extends State<SignIn> {
 
                           ) ,
                           onPressed: (){
-                            Navigator.of(context).pushNamed("mainScreen");
+                            
+
+                             Navigator.of(context).pushNamed("homeAdmin");
                           }, child: const Text("Sign In"))
                     ],
                   ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:student_sync/Student/HomePage.dart';
+import 'package:student_sync/Student/MessageDetail.dart';
+import 'package:student_sync/Student/NewsDelail.dart';
 import 'package:student_sync/Student/UserInfo.dart';
 
 class NextPageHome extends StatefulWidget {
@@ -228,7 +230,11 @@ class _NextPageHomeState extends State<NextPageHome>
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    PersistentNavBarNavigator.pushNewScreen(context, screen: const Message(),withNavBar: false);
+
+
+                                  },
                                   child: const Text("Open Message",style: TextStyle(color: Colors.deepPurple),)),
                               const Column(
                                 children: [Icon(Icons.visibility), Text("2")],
@@ -280,14 +286,17 @@ class _NextPageHomeState extends State<NextPageHome>
                                   child: Text("Date & Time: " +afficheNews[index]["date"], style: const TextStyle(fontWeight: FontWeight.w500),)),
                               Container(
                                   alignment: Alignment.centerLeft,
-                                  child: Text("Message: " +afficheNews[index]["message"], style: const TextStyle(fontWeight: FontWeight.w500),)),
+                                  child: Text("News: " +afficheNews[index]["message"], style: const TextStyle(fontWeight: FontWeight.w500),)),
                             ],
                           ),
                           const SizedBox(height: 5,),
                           const Divider(
                             height: 2,
                           ),
-                          Align(alignment: Alignment.centerRight,child: TextButton(onPressed: (){}, child: const Text("Show more")))
+                          Align(alignment: Alignment.centerRight,child: TextButton(onPressed: (){
+                            PersistentNavBarNavigator.pushNewScreen(context, screen: const News(),withNavBar: false);
+
+                          }, child: const Text("Show more")))
                         ],
                       ),
                     ),
