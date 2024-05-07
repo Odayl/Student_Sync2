@@ -12,6 +12,7 @@ import 'package:student_sync/admin/add_schedule/AddSchedule.dart';
 import 'Login/SignIn.dart';
 import 'Student/MessageDetail.dart';
 import 'admin/AddStudent/AddStudent.dart';
+import 'admin/getStudent/GetStudent.dart';
 import 'admin/homePage/AdminHomePage.dart';
 
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SignIn(),
+      home: const AdminHomePage(),
       routes: {
         "home":(context)=> const HomePage(),
         "sign in":(context)=> const SignIn(),
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         "AddStudent":(context)=> const AddStudent(),
         "message":(context)=> const Message(),
         "news":(context)=> const News(),
+        "get":(context)=> const GetStudent(),
 
       },
     );

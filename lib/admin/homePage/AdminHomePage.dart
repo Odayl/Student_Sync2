@@ -276,6 +276,47 @@ class _AdminHomePageState extends State<AdminHomePage> {
                         ),
                       ),
                       InkWell(
+                        onTap: () {
+                        Navigator.of(context).pushNamed("get");
+                        },
+                        child: Card(
+                          elevation: 10,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30)),
+
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              // border: Border.all(width: 2),
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(30)),
+                                color: Colors.white),
+                            child: Column(
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.only(top: 10),
+                                  child: CircleAvatar(
+                                      backgroundColor: Colors.white,
+                                      radius: 50,
+                                      child: Image.asset(
+                                        "images/search.png",
+                                        fit: BoxFit.contain,
+                                      )),
+                                ),
+                                const Text(
+                                  "Search",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      letterSpacing: 5,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black54), textAlign:
+                                TextAlign.center,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      InkWell(
                         onTap: () {},
                         child: Card(
                           elevation: 10,

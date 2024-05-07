@@ -19,24 +19,24 @@ class _NextPageHomeState extends State<NextPageHome>
 
   List afficheMessage = [
     {
-      "title": "title1",
-      "date": "10/10/2000",
-      "message": " here see one line of message",
+      "title": "Absence Msr Mohamed Aribi",
+      "date": "15/4/2024",
+      "message": " L'ensignent est été absent ... ",
     },
     {
-      "title": "title2",
-      "date": "13/05/2020",
-      "message": " here see one line of message",
+      "title": "Changement de salle ",
+      "date": "13/04/2024",
+      "message": "la salle de tp Lab 203...",
     },
     {
-      "title": "title3",
-      "date": "10/10/2022",
-      "message": " here see one line of message",
+      "title": "Absence Msr Mohamed Aribi",
+      "date": "12/10/2022",
+      "message": " L'ensignent est été absent ...",
     },
     {
-      "title": "title4",
-      "date": "10/10/2018",
-      "message": " here see one line of message",
+      "title": "Changement d'emploi",
+      "date": "12/10/2022",
+      "message": "L'emploi va modifier ...",
     },
     {
       "title": "title5",
@@ -56,24 +56,24 @@ class _NextPageHomeState extends State<NextPageHome>
   ];
   List afficheNews = [
     {
-      "title": "News1",
-      "date": "10/10/2000",
-      "message": " here see one line of message",
+      "title": "Certification Journey",
+      "date": "10/04/2024",
+      "message": "Chers étudients, Dans l'obectif ...",
     },
     {
-      "title": "News2",
-      "date": "13/05/2020",
-      "message": " here see one line of message",
+      "title": "Let's Have Fun: Festival des Arts",
+      "date": "09/04/2024",
+      "message": "oin us for a breathtaking ...",
     },
     {
-      "title": "News3",
-      "date": "10/10/2022",
-      "message": " here see one line of message",
+      "title": "Code of Duty ",
+      "date": "09/04/2024",
+      "message": "Join us for an unmissable event, ...",
     },
     {
-      "title": "News4",
-      "date": "10/10/2018",
-      "message": " here see one line of message",
+      "title": "Préparation à la Certification DELF",
+      "date": "09/04/2024",
+      "message": "Nous sommes ravis de vous annoncer ...",
     },
     {
       "title": "News5",
@@ -327,9 +327,10 @@ class _NextPageHomeState extends State<NextPageHome>
                         children: [
 
                           Text("Emploi du temps"),
-                          Text("**-**-****")
+                          Text("02/02/2024")
                         ],),
                     ),
+                    SizedBox(height: 10,),
                     Column(children: [
                       InkWell(onTap: (){
                        showDialog(context: context, builder: (context) => AlertDialog(

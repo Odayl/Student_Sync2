@@ -23,17 +23,19 @@ class Message extends StatelessWidget {
         child: ListView(
           children: [
             Container(
+
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
+                    color: Colors.blue[100],
                     shape: BoxShape.rectangle, border: Border.all(width: 1)),
-                child: Text("Title of message")),
+                child: Text(" Absence Msr Mohamed Aribi")),
             SizedBox(
               height: 10,
             ),
             Container(
-              child: Text("Date : 14 /12 /2024 , 20:21 Am "),
+              child: Text(" 15 /04/ 2024 , 9:21 Am "),
               padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
+              decoration: BoxDecoration( color: Colors.blue[100],
                   shape: BoxShape.rectangle, border: Border.all(width: 1)),
             ),
             SizedBox(
@@ -41,9 +43,10 @@ class Message extends StatelessWidget {
             ),
             Container(
               height: 500,
-                child: Text("Descreption: **********************"),
+                child: Text("Absence Msr Mohamed Aribi 1 jour le 15/04/2024,    se jour va rattraper à 20/04/2024 a 09:00 Am"),
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
+                    color: Colors.blue[100],
                     shape: BoxShape.rectangle, border: Border.all(width: 1))),
           ],
         ),

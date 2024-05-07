@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class UserInfo extends StatelessWidget {
-  const UserInfo({super.key});
+class EtudientInfo extends StatelessWidget {
+  const EtudientInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,7 @@ class UserInfo extends StatelessWidget {
                       "Cin/Passport",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    subtitle: const Text("11819596"),
+                    subtitle: const Text("000000000"),
                     leading: const Icon(Icons.perm_identity),
                     tileColor: Colors.grey[300],
                   ),
@@ -106,7 +106,7 @@ class UserInfo extends StatelessWidget {
                       "Date,Lien de naissance",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    subtitle: const Text("14/10/2000 , Mounastir"),
+                    subtitle: const Text("**/**/**** , ******"),
                     leading: const Icon(Icons.calendar_month),
                     tileColor: Colors.grey[300],
                   ),
@@ -118,7 +118,7 @@ class UserInfo extends StatelessWidget {
                       "Adresse",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    subtitle: const Text("06 rue Mdina"),
+                    subtitle: const Text("06 rue *********"),
                     leading: const Icon(Icons.home_filled),
                     tileColor: Colors.grey[300],
                   ),
@@ -130,7 +130,7 @@ class UserInfo extends StatelessWidget {
                       "Gouvernent",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    subtitle: const Text("Mounastir"),
+                    subtitle: const Text("********"),
                     leading: const Icon(Icons.location_city),
                     tileColor: Colors.grey[300],
                   ),
@@ -142,7 +142,7 @@ class UserInfo extends StatelessWidget {
                       "Tél / GSM",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    subtitle: const Text("216 50997273"),
+                    subtitle: const Text("216 ********"),
                     leading: const Icon(Icons.phone_android),
                     tileColor: Colors.grey[300],
                   ),

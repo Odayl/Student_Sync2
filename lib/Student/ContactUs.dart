@@ -67,7 +67,7 @@ class _ContactUsState extends State<ContactUs> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("111111111"),
+                          const Text("93225655"),
                           ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
@@ -79,7 +79,7 @@ class _ContactUsState extends State<ContactUs> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("222222222"),
+                          const Text("73644914"),
                           ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
